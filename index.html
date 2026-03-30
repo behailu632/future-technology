@@ -1,63 +1,107 @@
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE-edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?familiy=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
-        <title>FUTURE TECHNOLOGY</title>
-    </head>
-    <body> 
-        <header>
-            <div class="heading">
-             <h1>FUTURE TECHNOLOGY TRAINING CENTER</h1>
-             <p>Welcome to future technology training center!<br>we are delighted to see you here. <br> this is your site to develop your skill.</p>
-             <a href="https://behailu632.github.io/bekalferniture-/">Visit our web site </a>
-            </div>
-        </header>
-        <div class="navbar" id="myNavbar">
-            <a href="#">HOME</a>
-            <a href="#">DESIGN</a>
-            <div class="dropdown">
-              <button class="dropdownbtn">TUTORIALS</button>
-              <div class="dropdown-list">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Fixed font link -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Ethiopic&display=swap" rel="stylesheet">
+    
+    <title>SEMERE TECHNOLOGY TRAINING CENTER</title>
+</head>
+
+<body> 
+    <header>
+        <div class="heading">
+            <!-- Changed title -->
+            <h1>SEMERE TECHNOLOGY TRAINING CENTER</h1>
+
+            <!-- Improved text -->
+            <p>
+                Welcome to our modern technology training center!<br>
+                We are delighted to have you here.<br>
+                This is your place to build and develop real-world tech skills.
+            </p>
+
+            <!-- Changed link -->
+            <a href="https://example.com">Visit our website</a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <div class="navbar" id="myNavbar">
+        <a href="#">HOME</a>
+        <a href="#">DESIGN</a>
+
+        <div class="dropdown">
+            <button class="dropdownbtn">TUTORIALS</button>
+            <div class="dropdown-list">
                 <a href="#">HTML</a>
                 <a href="#">CSS</a>
                 <a href="#">JAVASCRIPT</a>
                 <a href="#">PHP</a>
                 <a href="#">SQL</a>
-                <a href="#">PYHTON</a>
-              </div>
+                <!-- Fixed spelling -->
+                <a href="#">PYTHON</a>
             </div>
-            <a href="#">CONTACT</a>
-            <a href="#">ABOUT</a>
-            <a href="#" class="ri">SIGNIN</a>
-            <a href="#" class="ri">SIGNUP</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
-        <div class="cont">
-            <h1>Learn<br> <span>Technology</span> </h1>
-            <p class="para">In modern era Technology is the most valuable Tool/education 
-            that enahances the over all effect in many areas of study .<br>
-            It makes life easier if you are trained and famililar with it. 
-            <br> So you have to learn and practice Technology
-            otherwise you are out dated from the modern world. <br> Come and join OUR traing center  for better life journey. <br>   </p>
-            
-            <p1 class="para1">ብዘመናዊ ዘመን ቴክኖሎጂ ኣብ ብዙሕ መስኮታት ትምህርቲ ኣጠቓላይ ተፅዕኖ ዝያዳ ዝውስኽ ኣገዳሲ መሳርሒ/ትምህርቲ እዩ። <br>
-               እንተ ተማሂርካን ተለማሚድካን ምስኡ ሕይወት ቀሊል ይገብራ። <br> ስለዚ ቴክኖሎጂ ክትመሃርን ክትልምድን ይግባእ፣ እንተ ዘይኮነ ካብ ዘመናዊ ዓለም ንድሕርት ትተርፍ ።
-               ንዝበለጸ ጉዕዞ ህይወት ናብ ስልጠና ማእከልና መጺእኩም ተቀላቀሉ። <br> <br> </p1>
-            <button class="learn"><a href="#">start now</a></button>
-        </div>
-        <script>
-            function myFunction(){
-                var x = document.getElementById("myNavbar");
-                if  (x.className === "navbar") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "navbar";
-                }
+
+        <!-- Added new menu item -->
+        <a href="#">COURSES</a>
+
+        <a href="#">CONTACT</a>
+        <a href="#">ABOUT</a>
+        <a href="#" class="ri">SIGNIN</a>
+        <a href="#" class="ri">SIGNUP</a>
+
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="cont">
+        <h1>Learn <br><span>Technology</span></h1>
+
+        <p class="para">
+            In the modern era, technology is the most valuable tool in many fields of study.<br>
+            It makes life easier if you are trained and familiar with it.<br>
+            So you must learn and practice technology, otherwise you may fall behind in the modern world.<br>
+            Join our training center for a better future.
+        </p>
+
+
+        <!-- Improved button -->
+        <button class="learn"><a href="#">Start Learning Now</a></button>
+    </div>
+
+    <!-- New Section (Proof of editing) -->
+    <div class="courses">
+        <h2>Our Courses</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Python Programming</li>
+            <li>Database Systems</li>
+        </ul>
+    </div>
+
+    <!-- Footer (your name added) -->
+    <footer>
+        <p>Created by Semere Tesfalem - 2026</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        function myFunction(){
+            var x = document.getElementById("myNavbar");
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
             }
-        </script>
-    </body>
+        }
+    </script>
+
+</body>
 </html>
